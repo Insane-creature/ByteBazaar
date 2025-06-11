@@ -1,4 +1,4 @@
-package com.ecommerce.project.Model;
+package com.ecommerce.project.model;
 
 public class Category {
     private Long categoryId;
