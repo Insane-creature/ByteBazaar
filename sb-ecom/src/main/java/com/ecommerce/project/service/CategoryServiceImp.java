@@ -11,6 +11,7 @@ import com.ecommerce.project.model.Category;
 public class CategoryServiceImp implements CategoryService{
 
     private List<Category> categories = new ArrayList<>();
+    private Long nextId = 1L;
 
     @Override
     public List<Category> getAllCategory() {
@@ -19,6 +20,7 @@ public class CategoryServiceImp implements CategoryService{
 
     @Override
     public void createCategory(Category category) {
+        category.setCategoryId(nextId++);
         categories.add(category);
     }
     
